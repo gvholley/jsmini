@@ -1,4 +1,7 @@
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   display: flex;
@@ -9,13 +12,16 @@ body {
 }
 
 button {
-  background-color: purple;
+  background-color: #690fe5;
   border: none;
+  border-radius: 2px;
   color: white;
   position: fixed;
+  outline: none;
   top: 20px;
   right: 20px;
   padding: 1rem;
+  transition: transform 0.5s ease-in-out;
 }
 
 button.active {
@@ -27,8 +33,14 @@ nav {
   top: 0;
   right: 0;
   height: 100vh;
-  background-color: purple;
+  padding: 2rem;
+  background: rgb(105,15,229);
+background: -moz-linear-gradient(180deg, rgba(105,15,229,1) 0%, rgba(167,38,255,1) 50%, rgba(194,24,219,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(105,15,229,1) 0%, rgba(167,38,255,1) 50%, rgba(194,24,219,1) 100%);
+background: linear-gradient(180deg, rgba(105,15,229,1) 0%, rgba(167,38,255,1) 50%, rgba(194,24,219,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#690fe5",endColorstr="#c218db",GradientType=1);
   transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
 }
 
 nav.active {
@@ -38,10 +50,11 @@ nav.active {
 nav ul {
   padding: 0;
   list-style: none;
+  margin: 0;
 }
 
 nav ul li {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 nav a {
