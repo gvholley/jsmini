@@ -8,4 +8,45 @@ body {
   min-height: 100vh;
 }
 
+button {
+  background-color: purple;
+  border: none;
+  color: white;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 1rem;
+}
+
+button.active {
+  transform: translateX(-100px);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: purple;
+  transform: translateX(100%);
+}
+
+nav.active {
+  transform: translateX(0);
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 2rem 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
 
